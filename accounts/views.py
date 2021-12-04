@@ -28,9 +28,8 @@ def login(request):
     return render(request,'login.html')    
 
 def register(request):
-    if request.user.is_authenticated:
         return render(request, 'register.html')
-    return redirect("/")
+
 
 
 
